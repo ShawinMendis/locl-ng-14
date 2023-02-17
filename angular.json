@@ -435,7 +435,8 @@
     }
   },
   "cli": {
-    "schematicCollections": ["@nstudio/xplat"]
+    "schematicCollections": ["@nstudio/xplat"],
+    "analytics": "99ca9dc1-8e4a-49dd-9ac3-86f8a8bad32d"
   },
   "schematics": {
     "@nrwl/angular:application": {
