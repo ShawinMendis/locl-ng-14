@@ -435,7 +435,7 @@
     }
   },
   "cli": {
-    "defaultCollection": "@nstudio/xplat"
+    "schematicCollections": ["@nstudio/xplat"]
   },
   "schematics": {
     "@nrwl/angular:application": {
@@ -449,6 +449,5 @@
     "@nrwl/angular:library": {
       "unitTestRunner": "jest"
     }
-  },
-  "defaultProject": "web"
+  }
 }
