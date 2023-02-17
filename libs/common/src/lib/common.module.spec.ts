@@ -4,7 +4,8 @@ import { LoclCommonModule } from './common.module';
 describe('CommonModule', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [LoclCommonModule]
+      imports: [LoclCommonModule],
+      teardown: { destroyAfterEach: false },
     }).compileComponents();
   }));
 
