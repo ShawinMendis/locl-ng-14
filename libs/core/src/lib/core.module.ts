@@ -1,4 +1,4 @@
-import { ɵMessageId, ɵTargetMessage } from '@angular/localize';
+import { MessageId, TargetMessage } from '@angular/localize';
 import { loadTranslations } from './init';
 
 export function parseTranslations(
@@ -41,7 +41,7 @@ export function getTranslations(
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
 
-    xhr.onload = function() {
+    xhr.onload = function () {
       try {
         const res = parseTranslations(xhr.responseText);
         loadTranslations(res);
@@ -51,19 +51,19 @@ export function getTranslations(
       }
     };
 
-    xhr.onerror = function() {
+    xhr.onerror = function () {
       reject(new Error('Network request failed'));
     };
 
-    xhr.ontimeout = function() {
+    xhr.ontimeout = function () {
       reject(new Error('Network request timeout'));
     };
 
-    xhr.onabort = function() {
+    xhr.onabort = function () {
       reject(new Error('Network request aborted'));
     };
 
-    Object.keys(headers).forEach(key =>
+    Object.keys(headers).forEach((key) =>
       xhr.setRequestHeader(key, headers[key])
     );
     xhr.open(method, url, async);
@@ -73,7 +73,7 @@ export function getTranslations(
 
 export interface ParsedTranslationBundle {
   locale: string;
-  translations: Record<ɵMessageId, ɵTargetMessage>;
+  translations: Record<MessageId, TargetMessage>;
 }
 
 /**
@@ -88,7 +88,7 @@ export function fetchTranslations(
   headers: { [key: string]: string } = {}
 ): Promise<ParsedTranslationBundle> {
   return fetch(url, { method, headers })
-    .then(response => response.text())
+    .then((response) => response.text())
     .then((response: string) => {
       const res = parseTranslations(response);
       loadTranslations(res);
