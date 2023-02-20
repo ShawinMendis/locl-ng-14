@@ -1,15 +1,12 @@
-# sm-locl-ng-14
+# locl-ng-14
 
-This is a forked repo of https://www.npmjs.com/package/@locl/core which supports angular version 14 upwards.
+This package is based on the forked https://www.npmjs.com/package/@locl/core library.
+(since @locl/core is no longer maintained and incompatible with Angular > 13) this package supports Angular 14.
 
-## Installation
+# Source code
 
-Install the core library with npm:
-
-```sh
-npm install sm-locl-ng-14 --save
-```
+Source code for the updated library can be found at https://github.com/ShawinMendis/locl-ng-14
 
 ## Usage
 
-Refer to original repo instructions & documentation https://www.npmjs.com/package/@locl/core
+Refer to original repository instructions & documentation https://www.npmjs.com/package/@locl/core
