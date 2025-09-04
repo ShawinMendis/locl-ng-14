@@ -1,7 +1,7 @@
-# locl-ng-14
+# locl-ng-core
 
 This package is based on the forked https://www.npmjs.com/package/@locl/core library.
-(since @locl/core is no longer maintained and incompatible with Angular > 13) this package supports Angular 14.
+(since @locl/core is no longer maintained and incompatible with Angular > 13) this package supports Angular 19.
 
 # Source code
 
