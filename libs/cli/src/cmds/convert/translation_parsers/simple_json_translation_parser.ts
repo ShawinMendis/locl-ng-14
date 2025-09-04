@@ -6,7 +6,7 @@
  * found in the LICENSE file at https://angular.io/license
  */
 import {
-  ɵMessageId,
+  MessageId,
   ɵParsedTranslation,
   ɵparseTranslation,
 } from '@angular/localize';
@@ -72,7 +72,7 @@ export class SimpleJsonTranslationParser implements TranslationParser<Object> {
 
   parse(_filePath: string, contents: string): ParsedTranslationBundle {
     const { locale: parsedLocale, translations } = JSON.parse(contents);
-    const parsedTranslations: Record<ɵMessageId, ɵParsedTranslation> = {};
+    const parsedTranslations: Record<MessageId, ɵParsedTranslation> = {};
     for (const messageId in translations) {
       const targetMessage = translations[messageId];
       parsedTranslations[messageId] = ɵparseTranslation(targetMessage);

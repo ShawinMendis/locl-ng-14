@@ -6,7 +6,7 @@
  * found in the LICENSE file at https://angular.io/license
  */
 import { Element, Node, XmlParser, visitAll } from '@angular/compiler';
-import { ɵMessageId, ɵParsedTranslation } from '@angular/localize';
+import { MessageId, ɵParsedTranslation } from '@angular/localize';
 import { Diagnostics } from '../../common/diagnostics';
 
 import { MessageSerializer } from '../message_serialization/message_serializer';
@@ -25,7 +25,7 @@ import {
   XmlTranslationParserHint,
   canParseXml,
 } from './translation_utils';
-import { BaseVisitor } from '@angular/localize/src/tools/src/translate/translation_files/base_visitor';
+import { BaseVisitor } from '@angular/localize/tools/src/translate/translation_files/base_visitor';
 
 /**
  * A translation parser that can load translations from XLIFF 2 files.
@@ -34,7 +34,8 @@ import { BaseVisitor } from '@angular/localize/src/tools/src/translate/translati
  *
  */
 export class Xliff2TranslationParser
-  implements TranslationParser<XmlTranslationParserHint> {
+  implements TranslationParser<XmlTranslationParserHint>
+{
   constructor(private diagnostics: Diagnostics) {}
 
   canParse(
@@ -103,7 +104,7 @@ class Xliff2TranslationBundleVisitor extends BaseVisitor {
 }
 
 class Xliff2TranslationVisitor extends BaseVisitor {
-  private translations: Record<ɵMessageId, ɵParsedTranslation> = {};
+  private translations: Record<MessageId, ɵParsedTranslation> = {};
 
   static extractTranslations(
     file: Element

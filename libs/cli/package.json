@@ -33,7 +33,7 @@
     "@types/glob": "^7.1.1"
   },
   "peerDependencies": {
-    "@angular/localize": "14.2.12",
+    "@angular/localize": "^14.0.0",
     "@angular/compiler": "^14.0.0",
     "@angular/core": "^14.0.0"
   }

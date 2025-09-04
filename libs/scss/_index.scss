@@ -2,7 +2,7 @@
  * The following are shared across all platforms and apps
  */
 // shared variables
-@import 'variables';
+@use 'variables';
 body {
   background-color: #fff;
 }

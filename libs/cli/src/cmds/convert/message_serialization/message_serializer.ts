@@ -11,14 +11,14 @@ import {
   ExpansionCase,
   Node,
   Text,
-  visitAll
+  visitAll,
 } from '@angular/compiler';
-import { BaseVisitor } from '@angular/localize/src/tools/src/translate/translation_files/base_visitor';
+import { BaseVisitor } from '@angular/localize/tools/src/translate/translation_files/base_visitor';
 
 import { TranslationParseError } from '../translation_parsers/translation_parse_error';
 import {
   getAttrOrThrow,
-  getAttribute
+  getAttribute,
 } from '../translation_parsers/translation_utils';
 
 import { MessageRenderer } from './message_renderer';

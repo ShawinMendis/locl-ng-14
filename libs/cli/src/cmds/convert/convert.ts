@@ -1,5 +1,5 @@
 import { NodeJSFileSystem } from '@angular/compiler-cli/src/ngtsc/file_system';
-import { TranslationLoader } from '@angular/localize/src/tools/src/translate/translation_files/translation_loader';
+import { TranslationLoader } from '@angular/localize/tools/src/translate/translation_files/translation_loader';
 import { Diagnostics } from '../common/diagnostics';
 import { FileUtils } from '../common/file_utils';
 import { getTranslationSerializer, translationToMessage } from '../common/util';

@@ -3,7 +3,7 @@ import { TranslationSerializer } from '../extract/translation_files/translation_
 import { Xliff1TranslationSerializer } from '../extract/translation_files/xliff1_translation_serializer';
 import { Xliff2TranslationSerializer } from '../extract/translation_files/xliff2_translation_serializer';
 import { XmbTranslationSerializer } from '../extract/translation_files/xmb_translation_serializer';
-import { ɵMessageId, ɵParsedMessage } from '@angular/localize';
+import { MessageId, ɵParsedMessage } from '@angular/localize';
 import { ParsedTranslation } from '../convert/translations';
 import { XtbTranslationSerializer } from '../extract/translation_files/xtb_translation_serializer';
 
@@ -170,7 +170,7 @@ export interface ParsedMessageLegacy {
   /**
    * The key used to look up the appropriate translation target.
    */
-  messageId: ɵMessageId;
+  messageId: MessageId;
   /**
    * Legacy message ids, if provided.
    *
@@ -181,7 +181,7 @@ export interface ParsedMessageLegacy {
    * attached by the compiler to the `$localize` metablock so it can be used if needed at the point
    * of translation if the translations are encoded using the legacy message id.
    */
-  legacyIds: ɵMessageId[];
+  legacyIds: MessageId[];
   /**
    * A mapping of placeholder names to substitution values.
    */

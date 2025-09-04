@@ -1,5 +1,5 @@
 // Load `$localize` onto the global scope - used if i18n tags appear in Angular templates.
-import '@angular/localize/init';
+// import '@angular/localize/init';
 import { ɵɵi18nPostprocess } from '@angular/core';
 import { loadTranslations as _loadTranslations } from '@angular/localize';
 import { ParsedTranslationBundle } from './interfaces';

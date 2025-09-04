@@ -7,15 +7,15 @@
  */
 import { Diagnostics } from '../../common/diagnostics';
 import { ParsedTranslation } from '../translations';
-import { ɵMessageId } from '@angular/localize';
+import { MessageId } from '@angular/localize';
 
 /**
  * An object that holds translations that have been parsed from a translation file.
  */
 export interface ParsedTranslationBundle {
   locale: string | undefined;
-  sources?: Record<ɵMessageId, ParsedTranslation>;
-  translations: Record<ɵMessageId, ParsedTranslation>;
+  sources?: Record<MessageId, ParsedTranslation>;
+  translations: Record<MessageId, ParsedTranslation>;
   diagnostics: Diagnostics;
 }
 

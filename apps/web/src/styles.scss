@@ -1,11 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@locl/scss';
-@import "~bulma/sass/utilities/_all";
-@import "~bulma/sass/base/_all";
+@use '@locl/scss';
+@use 'bulma/sass/utilities';
+@use 'bulma/sass/base';
 
 /*** ELEMENTS ***/
 //@import "~bulma/sass/elements/box.sass";
-@import "~bulma/sass/elements/button.sass";
+@use 'bulma/sass/elements';
 //@import "~bulma/sass/elements/container.sass";
 //@import "~bulma/sass/elements/content.sass";
 //@import "~bulma/sass/elements/icon.sass";
@@ -18,8 +18,7 @@
 //@import "~bulma/sass/elements/other.sass";
 
 /*** FORMS ***/
-@import "~bulma/sass/form/shared.sass";
-@import "~bulma/sass/form/input-textarea.sass";
+@use 'bulma/sass/form';
 //@import "~bulma/sass/form/checkbox-radio.sass";
 //@import "~bulma/sass/form/select.sass";
 //@import "~bulma/sass/form/file.sass";
@@ -41,8 +40,8 @@
 //@import "~bulma/sass/components/tabs.sass";
 
 /*** GRID ***/
-@import "~bulma/sass/grid/columns.sass";
-@import "~bulma/sass/grid/tiles.sass";
+@use 'bulma/sass/grid';
+// @use "bulma/sass/grid/tiles.sass";
 
 /*** LAYOUT ***/
 //@import "~bulma/sass/layout/hero.sass";
