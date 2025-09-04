@@ -6,12 +6,16 @@ import { LazyLoadedComponent } from './lazy-loaded.component';
 const lazyRoutes: Routes = [
   {
     path: '',
-    component: LazyLoadedComponent
-  }
+    component: LazyLoadedComponent,
+  },
 ];
 
 @NgModule({
-  imports: [CommonModule, RouterModule.forChild(lazyRoutes)],
-  declarations: [LazyLoadedComponent]
+  imports: [
+    CommonModule,
+    LazyLoadedComponent,
+    RouterModule.forChild(lazyRoutes),
+  ],
+  declarations: [],
 })
 export class LazyLoadedModule {}

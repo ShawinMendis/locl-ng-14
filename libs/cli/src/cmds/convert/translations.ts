@@ -1,4 +1,4 @@
-import { ɵMessageId, ɵParsedTranslation } from '@angular/localize';
+import { MessageId, ɵParsedTranslation } from '@angular/localize';
 
 /**
  * A translation message that has been processed to extract the message parts and placeholders.
@@ -13,7 +13,7 @@ export interface ParsedTranslation extends ɵParsedTranslation {
 /**
  * The internal structure used by the runtime localization to translate messages.
  */
-export declare type ParsedTranslations = Record<ɵMessageId, ParsedTranslation>;
+export declare type ParsedTranslations = Record<MessageId, ParsedTranslation>;
 
 /**
  * An object that holds translations that have been parsed from a translation file.

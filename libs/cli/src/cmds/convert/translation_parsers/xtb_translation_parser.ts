@@ -25,13 +25,14 @@ import {
   XmlTranslationParserHint,
 } from './translation_utils';
 import { Diagnostics } from '../../common/diagnostics';
-import { BaseVisitor } from '@angular/localize/src/tools/src/translate/translation_files/base_visitor';
+import { BaseVisitor } from '@angular/localize/tools/src/translate/translation_files/base_visitor';
 
 /**
  * A translation parser that can load XB files.
  */
 export class XtbTranslationParser
-  implements TranslationParser<XmlTranslationParserHint> {
+  implements TranslationParser<XmlTranslationParserHint>
+{
   constructor(private diagnostics: Diagnostics) {}
 
   canParse(
